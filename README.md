@@ -6,7 +6,7 @@ This project demonstrates basic Assembly programming for the **Arduino Uno** usi
 ## Branchs
 Each branch is different project using C and Assembly languages.
 * Blinky - Simples LED blink project
-* Toggle - Push button LED toggle
+* Serial - USART (Serial) setup project
 
 ## Repository Structure
 ```
