@@ -1,19 +1,14 @@
 # Assembly Project - `assembly-prj`
 
 ## Description
-This project demonstrates basic Assembly programming for the **Arduino Uno** using PlatformIO. The primary goal is to control an LED using Assembly while interacting with a C program. The project also includes a global variable to store the state of `PORTB`, which is accessible from C for debugging.
-
-## Features
-- Blinking an LED using Assembly.
-- Reading and storing `PORTB` values in a global variable.
-- Debugging via serial output in C.
+This project demonstrates basic Assembly programming for the **Arduino Uno** using PlatformIO.
 
 ## Repository Structure
 ```
 assembly-prj/
 │── src/
 │   ├── main.c      # C code handling setup, loop, and serial debugging
-│   ├── main.S      # Assembly code for LED control and `PORTB` monitoring
+│   ├── main.S      # Assembly code
 │── platformio.ini  # PlatformIO configuration file
 │── README.md       # Project documentation
 ```
