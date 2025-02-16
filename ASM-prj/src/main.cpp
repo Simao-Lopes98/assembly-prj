@@ -8,7 +8,7 @@ extern "C"
 {
   void start();
   void led(byte);
-  volatile uint8_t ledVal = 1;
+  volatile uint8_t ledVal;
 }
 
 void setup() 
@@ -23,9 +23,9 @@ void setup()
 void loop() 
 {
   led(1);
-  Serial.println(ledVal);
+  Serial.println(ledVal, BIN);
   delay(500);
   led(0);
-  Serial.println(ledVal);
+  Serial.println(ledVal, BIN);
   delay(500);
 }
