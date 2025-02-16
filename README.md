@@ -3,6 +3,11 @@
 ## Description
 This project demonstrates basic Assembly programming for the **Arduino Uno** using PlatformIO.
 
+## Branchs
+Each branch is different project using C and Assembly languages.
+* Blinky - Simples LED blink project
+* Toggle - Push button LED toggle
+
 ## Repository Structure
 ```
 assembly-prj/
