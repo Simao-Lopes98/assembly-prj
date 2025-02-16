@@ -16,7 +16,6 @@ void setup()
   Serial.begin(9600);
   Serial.println("Setup");
   start();
-  delay(1000);
   Serial.println("End of Setup");
 }
 
