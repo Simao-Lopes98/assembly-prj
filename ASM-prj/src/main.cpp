@@ -7,6 +7,7 @@ extern "C"
 {
   void gpioStart(void);
   void serialStart(void);
+  void serialPrint(char letter);
 }
 
 void setup() 
@@ -17,6 +18,8 @@ void setup()
 
 void loop() 
 {
-  Serial.println("Hi good morning");
-  delay(1000);
+  serialPrint('O');
+  delay(50); // Give it time to 
+  serialPrint('\n');
+  delay(50);
 }

@@ -6,7 +6,7 @@
 
 .global gpioStart
 .global serialStart
-
+.global serialPrint
 
 gpioStart:
     ; Setup GPIO
@@ -31,4 +31,9 @@ serialStart:
     ORI R16, (1 << USBS0)
     ORI R16, (3 << UCSZ00)
     STS UCSR0C, R16
+    RET
+
+; R24 and R25 contain the pointer to the string (pointer is 16 -bit)
+serialPrint:
+    STS UDR0, R24
     RET
